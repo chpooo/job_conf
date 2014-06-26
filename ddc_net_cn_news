@@ -1,0 +1,23 @@
+{
+	"war_file":"/root/zju_chpoo/crawler/jobs/ddc_net_cn_news/latest/warcs/WEB-20140626085719898-00000-3981~localhost~8443.warc",
+	"mode":
+	[
+	{"name":"url_regex"},
+	{"regex":".*newsview.*html"}
+	],
+	"dbinfo":
+	[
+	{"address":"localhost"},
+	{"username":"root"},
+	{"passwd":""},
+	{"database":"ddc_net_cn"},
+	{"table":"news"}
+	],
+	"rules":
+	[
+	{"title":"//body/form/div[3]/div[1]/div/div[2]/h1"},
+	{"content":"//body/form/div[3]/div[1]/div/div[3]"},
+	{"date":"//body/form/div[3]/div[1]/div/div[2]/div[1]"},
+	{"DCSource":"url"}
+	]
+}
