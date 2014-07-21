@@ -1,0 +1,23 @@
+{
+	"war_file":"/home/chpooo/ecar_crawler/crawler/jobs/www_ddqc_cc_news/latest/warcs",
+	"mode":
+	[
+	{"name":"url_regex"},
+	{"regex":".*html.*htm"}
+	],
+	"dbinfo":
+	[
+	{"address":"localhost"},
+	{"username":"root"},
+	{"passwd":""},
+	{"database":"www.ddqc.cc"},
+	{"table":"news"}
+	],
+	"rules":
+	[
+	{"PubTitle":"//body/div[5]/div[1]/div[2]/div[1]"},
+	{"Content":"//body/div[5]/div[1]/div[2]/div[4]"},
+	{"PublicationDate":"//body/div[5]/div[1]/div[2]/div[2]/span[1]/a"},
+	{"DCSource":"url"}
+	]
+}

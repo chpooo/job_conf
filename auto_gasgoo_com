@@ -1,0 +1,23 @@
+{
+	"war_file":"/home/chpooo/ecar_crawler/crawler/jobs/auto_gasgoo_com/latest/warcs/",
+	"mode":
+	[
+	{"name":"url_regex"},
+	{"regex":".*News.*shtml"}
+	],
+	"dbinfo":
+	[
+	{"address":"localhost"},
+	{"username":"root"},
+	{"passwd":""},
+	{"database":"auto.gasgoo.com"},
+	{"table":"news"}
+	],
+	"rules":
+	[
+	{"PubTitle":"//body/div[5]/div[1]/div[1]/div[3]/div[1]/h1"},
+	{"Content":"//body/div[5]/div[1]/div[1]/div[3]/div[2]"},
+	{"PublicationDate":"//body/div[5]/div[1]/div[1]/div[3]/dl/dt/span[1]"},
+	{"DCSource":"url"}
+	]
+}

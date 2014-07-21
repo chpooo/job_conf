@@ -1,0 +1,23 @@
+{
+	"war_file":"/home/chpooo/ecar_crawler/crawler/jobs/www_okev_cn_news/latest/warcs",
+	"mode":
+	[
+	{"name":"url_regex"},
+	{"regex":".*news.*html"}
+	],
+	"dbinfo":
+	[
+	{"address":"localhost"},
+	{"username":"root"},
+	{"passwd":""},
+	{"database":"www.okev.cn"},
+	{"table":"news"}
+	],
+	"rules":
+	[
+	{"PubTitle":"//body/div[8]/div[1]/div/h1"},
+	{"Content":"//body/div[8]/div[1]/div/div[5]/div"},
+	{"PublicationDate":"//body/div[8]/div[1]/div/div[3]"},
+	{"DCSource":"url"}
+	]
+}

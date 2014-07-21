@@ -1,0 +1,23 @@
+{
+	"war_file":"/home/chpooo/ecar_crawler/crawler/jobs/www_evpartner_com_news/latest/warcs",
+	"mode":
+	[
+	{"name":"url_regex"},
+	{"regex":".*news.*html"}
+	],
+	"dbinfo":
+	[
+	{"address":"localhost"},
+	{"username":"root"},
+	{"passwd":""},
+	{"database":"www.evpartner.com"},
+	{"table":"news"}
+	],
+	"rules":
+	[
+	{"PubTitle":"//body/div[7]/div[1]/div[1]/h4"},
+	{"Content":"//body/div[7]/div[1]/div[2]"},
+	{"PublicationDate":"//body/div[7]/div[1]/div[1]/p"},
+	{"DCSource":"url"}
+	]
+}

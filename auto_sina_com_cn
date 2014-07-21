@@ -1,0 +1,23 @@
+{
+	"war_file":"/home/chpooo/ecar_crawler/crawler/jobs/auto_sina_com_cn/latest/warcs",
+	"mode":
+	[
+	{"name":"url_regex"},
+	{"regex":".*news.*shtml"}
+	],
+	"dbinfo":
+	[
+	{"address":"localhost"},
+	{"username":"root"},
+	{"passwd":""},
+	{"database":"auto.sina.com.cn"},
+	{"table":"news"}
+	],
+	"rules":
+	[
+	{"PubTitle":"//body/div[13]/div[1]/div[1]/h1"},
+	{"Content":"//body/div[13]/div[1]/div[1]/div[2]/div/div[1]"},
+	{"PublicationDate":"//body/div[13]/div[1]/div[1]/div[1]/span[2]"},
+	{"DCSource":"url"}
+	]
+}

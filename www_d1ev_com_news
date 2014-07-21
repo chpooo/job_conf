@@ -1,0 +1,23 @@
+{
+	"war_file":"/home/chpooo/ecar_crawler/crawler/jobs/www_d1ev_com_news/latest/warcs",
+	"mode":
+	[
+	{"name":"url_regex"},
+	{"regex":".*news.*html"}
+	],
+	"dbinfo":
+	[
+	{"address":"localhost"},
+	{"username":"root"},
+	{"passwd":""},
+	{"database":"www.d1ev.com"},
+	{"table":"news"}
+	],
+	"rules":
+	[
+	{"PubTitle":"//body/div[5]/div[2]/div[1]/div[1]/h1"},
+	{"Content":"//body/div[5]/div[2]/div[1]/div[3]"},
+	{"PublicationDate":"//body/div[5]/div[2]/div[1]/div[1]/div/div[1]/span[3]"},
+	{"DCSource":"url"}
+	]
+}

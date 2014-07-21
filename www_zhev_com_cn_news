@@ -1,0 +1,23 @@
+{
+	"war_file":"/home/chpooo/ecar_crawler/crawler/jobs/www_zhev_com_cn_news/latest/warcs",
+	"mode":
+	[
+	{"name":"url_regex"},
+	{"regex":".*news.*html"}
+	],
+	"dbinfo":
+	[
+	{"address":"localhost"},
+	{"username":"root"},
+	{"passwd":""},
+	{"database":"www.zhev.com.cn"},
+	{"table":"news"}
+	],
+	"rules":
+	[
+	{"PubTitle":"//body/div[7]/div[1]/div[1]/h1"},
+	{"Content":"//body/div[7]/div[1]/div[1]/div[6]/div"},
+	{"PublicationDate":"//body/div[7]/div[1]/div[1]/div[5]"},
+	{"DCSource":"url"}
+	]
+}

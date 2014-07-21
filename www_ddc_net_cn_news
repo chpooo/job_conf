@@ -1,0 +1,23 @@
+{
+	"war_file":"/home/chpooo/ecar_crawler/crawler/jobs/www_ddc_net_cn_news/latest/warcs",
+	"mode":
+	[
+	{"name":"url_regex"},
+	{"regex":".*newsview.*html"}
+	],
+	"dbinfo":
+	[
+	{"address":"localhost"},
+	{"username":"root"},
+	{"passwd":""},
+	{"database":"www.ddc.net.cn"},
+	{"table":"news"}
+	],
+	"rules":
+	[
+	{"PubTitle":"//body/form/div[3]/div[1]/div[1]/div[2]/h1"},
+	{"Content":"//body/form/div[3]/div[1]/div[1]/div[3]"},
+	{"PublicationDate":"//body/form/div[3]/div[1]/div[1]/div[2]/div[1]"},
+	{"DCSource":"url"}
+	]
+}

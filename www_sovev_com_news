@@ -1,0 +1,23 @@
+{
+	"war_file":"/home/chpooo/ecar_crawler/crawler/jobs/www_sovev_com_news/latest/warcs",
+	"mode":
+	[
+	{"name":"url_regex"},
+	{"regex":".*sovey_news.*php"}
+	],
+	"dbinfo":
+	[
+	{"address":"localhost"},
+	{"username":"root"},
+	{"passwd":""},
+	{"database":"www.sovey.com"},
+	{"table":"news"}
+	],
+	"rules":
+	[
+	{"PubTitle":"//body/div/div[1]/div[3]/h2"},
+	{"Content":"//body/div/div[1]/div[3]/div[1]"},
+	{"PublicationDate":"//body/div/div[1]/div[3]/span"},
+	{"DCSource":"url"}
+	]
+}
